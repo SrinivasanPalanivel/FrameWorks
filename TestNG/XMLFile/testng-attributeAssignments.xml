@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5" parallel="classes">
+<parameter name="url" value="http://leaftaps.com/opentaps"/>
+ <test thread-count="2" name="Test">
+   <classes>
+     <class name="week7.day13.CreateLead"/>
+     <class name="week7.day13.EditLead"/>  
+     <class name="week7.day13.DuplicateLead"/>  
+     <class name="week7.day13.DeleteLead"/>
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
